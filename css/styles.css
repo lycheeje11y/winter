@@ -15,7 +15,7 @@ h1 {
 .layer1 {
   width: var(--width);
   height: var(--height);
-  background: url("../snowflake.png");
+  background: url("../static/snowflake.png");
   background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
