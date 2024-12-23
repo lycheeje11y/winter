@@ -1,17 +1,31 @@
 :root {
   --width: 200px;
   --height: calc(var(--width) / 2);
-}
 
-body {
+  font-family: "Mountains of Christmas";
+
   background-color: #bde0fe;
 }
 
-h1 {
-  text-align: center;
-
-  color: #03045e;
+h3 {
+  color: #bde0fe;
 }
+button {
+  color: #03045e;
+  font-size: 50px;
+
+  border: none;
+  background: none;
+
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+}
+
+button:hover {
+  color: #bde0fe;
+}
+
 .layer1 {
   width: var(--width);
   height: var(--height);
@@ -23,6 +37,23 @@ h1 {
   animation:
     toRight linear 6.8s infinite alternate,
     bounce linear 17s infinite alternate;
+}
+
+#snow-container {
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transition: opacity 500ms;
+  width: 100%;
+}
+
+.snow {
+  animation:
+    snow-vertical ease-in infinite,
+    snow-horizontal ease-in-out infinite;
+  color: white;
+  position: absolute;
 }
 
 @keyframes bounce {
@@ -55,5 +86,40 @@ h1 {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes snow-vertical {
+  0% {
+    opacity: 0;
+  }
+  25% {
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+  }
+  100% {
+    top: 100vh;
+    opacity: 1;
+  }
+}
+
+@keyframes snow-horizontal {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 50px;
+  }
+  50% {
+    margin-left: -50px;
+  }
+  75% {
+    margin-left: 50px;
+  }
+  100% {
+    margin-left: 0;
   }
 }
