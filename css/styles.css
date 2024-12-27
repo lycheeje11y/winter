@@ -6,6 +6,10 @@
   background-image: url("../static/background.png");
 }
 
+@font-face {
+  font-family: MountainsOfChristmas;
+  src: url("../static/MountainsofChristmas-Regular.ttf");
+}
 button {
   color: #03045e;
   font-size: 50px;
@@ -13,7 +17,7 @@ button {
   border: none;
   background: none;
 
-  font-family: "Mountains of Christmas";
+  font-family: MountainsOfChristmas;
 }
 .center {
   position: fixed;
@@ -61,7 +65,7 @@ p {
     snow-horizontal ease-in-out infinite;
   color: white;
   position: absolute;
-  font-family: "Mountains of Christmas";
+  font-family: MountainsOfChristmas;
 }
 
 @keyframes bounce {
