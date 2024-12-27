@@ -12,10 +12,34 @@
   </head>
   <body>
     <div id="snow-container">
-      <button onclick="clickChristmas()">Merry Christmas!</button>
-      <div onclick="clickSnowflake()" class="layer1"></div>
+      <div id="stuff">
+        <button class="center" onclick="clickChristmas()">
+          Merry Christmas! <br />(Also, wait for the snowfall!) <br />
+          (Also, also, click everywhere!)
+          <br />
+          <i> ~JRW </i>
+
+          <p>
+            I hope ygs had a good Christmas! I'm extremely grateful for events
+            like this cuz they help me to focus more on coding (I tend to
+            procrasinate a lot ;-;), so keep up the good work!
+            <br />Take a listen to this song...it's not a Christmas song but
+            it's one of my favs and I'm not exactly partial towards Christmas
+            music.
+          </p>
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/2W779g2UrRZtVdf3FcEOO1?utm_source=generator&theme=0"
+            width="25%"
+            height="200"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </button>
+      </div>
     </div>
-    <h3>is the grinch here?</h3>
   </body>
 
   <script>
@@ -58,7 +82,7 @@
         snowflakes.forEach((snow) => {
           snow.innerHTML = "&#128900;";
         });
-      }, 5000);
+      }, 50000);
     };
 
     const clickSnowflake = () => {
@@ -73,5 +97,12 @@
       }, 5000);
     };
     document.addEventListener("DOMContentLoaded", makeitsnow(30));
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.body.addEventListener("click", () => {
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+        clickChristmas();
+      });
+    });
   </script>
 </html>

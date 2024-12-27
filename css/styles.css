@@ -2,14 +2,10 @@
   --width: 200px;
   --height: calc(var(--width) / 2);
 
-  font-family: "Mountains of Christmas";
-
   background-color: #bde0fe;
+  background-image: url("../static/background.png");
 }
 
-h3 {
-  color: #bde0fe;
-}
 button {
   color: #03045e;
   font-size: 50px;
@@ -17,13 +13,24 @@ button {
   border: none;
   background: none;
 
-  display: block;
+  font-family: "Mountains of Christmas";
+}
+.center {
+  position: fixed;
+  inset: 0px;
+  width: 100%;
+  height: 75%;
+  max-width: 100vw;
+  max-height: 100dvh;
   margin: auto;
-  margin-top: 25px;
 }
 
-button:hover {
-  color: #bde0fe;
+i {
+  font-size: 25px;
+}
+p {
+  font-family: auto;
+  font-size: 15px;
 }
 
 .layer1 {
@@ -54,6 +61,7 @@ button:hover {
     snow-horizontal ease-in-out infinite;
   color: white;
   position: absolute;
+  font-family: "Mountains of Christmas";
 }
 
 @keyframes bounce {
